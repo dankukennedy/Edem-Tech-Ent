@@ -34,7 +34,7 @@ const members: Member[] = [
     name: "Prosper Paul Lawer",
     technologies: "HTML, PHP, CSS, React Native, React.js",
     image: Skepta,
-    github: "#",
+    github: "https://github.com/1skepta",
     linkedIn: "https://www.linkedin.com/in/paul-prosper-lawer-23419021a/",
     field: "Frontend Developer",
   },
