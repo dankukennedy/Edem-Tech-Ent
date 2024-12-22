@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                WhatsApp Me
+                WhatsApp Us
               </a>
             </div>
             <div className="mb-4">
