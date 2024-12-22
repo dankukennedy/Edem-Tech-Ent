@@ -48,7 +48,7 @@ const [isOpen,setIsOpen]=useState(false);
                      <div className='flex flex-col space-y-4 mt-4 text-center'>
                         <a href="#home" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Home</a>
                         <a href="#team" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Team</a>
-                        <a href="#service" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Team</a>
+                        <a href="#service" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Services</a>
                         <a href="#project" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Projects</a>
                         <a href="#about" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>About </a>
                         <a href="#contact" className='p-1 hover:text-white font-bold hover:bg-gradient-to-r from-blue-300 to-purple-900 rounded '>Contact</a>
