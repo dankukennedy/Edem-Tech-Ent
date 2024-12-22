@@ -1,10 +1,8 @@
 import React from 'react'
 import Flyer from '../assets/projects/flyer.jpeg'
-import Blog from '../assets/projects/blog.png'
-import Node from '../assets/projects/node.jpeg'
 import CIC from '../assets/projects/cic.jpeg'
 import Commerce from '../assets/projects/ecommerce.jpeg'
-import Transcript from '../assets/projects/transcript.jpeg'
+
 
 interface Projects{
     id:number;

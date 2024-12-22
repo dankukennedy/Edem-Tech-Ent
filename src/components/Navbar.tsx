@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Logo from  '../assets/logo.jpeg'
-interface Props{
 
-}
 
 const Navbar:React.FC = () => {
 const [isOpen,setIsOpen]=useState(false);

@@ -1,9 +1,6 @@
 import React from 'react'
-interface Props{
 
-}
-
-const OverView:React.FC <Props>= () => {
+const OverView:React.FC = () => {
   return (
     <div className='bg-gradient-to-r from-red-400 to-red-800 text-white text-center py-16' id='about'>
       <h1 className='text-3xl font-bold '>

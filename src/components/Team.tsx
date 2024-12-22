@@ -6,7 +6,7 @@ import Eric from '../assets/Team/eric.jpg'
 import Derrick from '../assets/Team/derrick.jpg'
 import User from '../assets/Team/user.jpg'
 import Riches from '../assets/Team/riches.jpg'
-import Bismark from '../assets/Team/pro.jpeg'
+//import Bismark from '../assets/Team/pro.jpeg'
 
 
 interface Member {
