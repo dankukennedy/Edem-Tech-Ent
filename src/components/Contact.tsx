@@ -1,41 +1,55 @@
-import React, { useState } from 'react';
-import { FaEnvelope, FaMapMarkedAlt, FaMobile, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import React, { useState } from "react";
+import {
+  FaEnvelope,
+  FaMapMarkedAlt,
+  FaMobile,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    contact: '',
-    message: '',
+    name: "",
+    email: "",
+    contact: "",
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
-    alert('Message sent successfully!');
-    setFormData({ name: '', email: '', contact: '', message: '' });
+    console.log("Form Data:", formData);
+    alert("Message sent successfully!");
+    setFormData({ name: "", email: "", contact: "", message: "" });
   };
 
   return (
     <div className="bg-gradient-to-r from-red-400 to-red-800 py-2" id="contact">
       <div className="container px-8 mx-auto md:px-16 lg:px-24">
-        <h1 className="text-4xl font-bold font-serif text-white text-center m-6">Contact Us</h1>
+        <h1 className="text-4xl font-bold font-serif text-white text-center m-6">
+          Contact Us
+        </h1>
         <div className="flex flex-col md:flex-row items-center md:space-x-12 sm:flex-row sm:space-x-6">
           <div className="flex-1">
             <h3 className="text-3xl font-bold font-serif text-transparent bg-clip-text bg-gradient-to-r from-black to-blue-500">
               Let's Talk
             </h3>
             <p className="text-white m-1 font-bold font-serif">
-              We are open to discussing web development projects or partnership opportunities
+              We are open to discussing web development projects or partnership
+              opportunities
             </p>
             <div className="mb-4 mt-8">
               <FaEnvelope className="inline-block mr-1" />
-              <a href="mailto:edemtechent@gmail.com" className="hover:underline">
+              <a
+                href="mailto:edemtechent@gmail.com"
+                className="hover:underline"
+              >
                 edemtechent@gmail.com
               </a>
             </div>
@@ -72,7 +86,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   name="name"
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter Your Name"
@@ -86,7 +100,7 @@ const Contact: React.FC = () => {
                 <input
                   type="email"
                   name="email"
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="w-full p-2 rounded text-white bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter Your Email"
@@ -100,7 +114,7 @@ const Contact: React.FC = () => {
                 <input
                   type="tel"
                   name="contact"
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.contact}
                   onChange={handleChange}
                   placeholder="Enter Your Contact Number"
@@ -114,7 +128,7 @@ const Contact: React.FC = () => {
                 <textarea
                   rows={5}
                   name="message"
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Enter Your Message"
