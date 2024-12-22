@@ -1,0 +1,76 @@
+//////////////////
+import React from 'react'
+//import PropTypes from 'prop-types'
+
+interface NavbarProps{
+    title:string;
+    links:{label:string; href:string}[];
+    isLoggedIn?:boolean;
+    onLogout?:()=>void;
+}
+
+const Navbar:React.FC<NavbarProps>= ({title,links, isLoggedIn=false,onLogout}) => {
+  return (
+    <nav className='bg-gradient-to-tr from-green-300 to-blue-800 text-white p-4'>
+        <div className='flex justify-between items-center'>
+            
+            <h1 className='text-2xl font-bold'>{title}</h1>
+
+              <ul className='flex space-x-4'>
+                {links.map((link,index) =>(
+                <li key={index}>
+                   <a href={link.href} className='hover:underline'>
+                    {link.label}
+                   </a>
+                </li>))}
+              </ul>
+              {isLoggedIn && (
+                <button
+                onClick={onLogout}
+                className='bg-red-500 hover:bg-red-700 text-white py-1 px-3 rounded'>
+                    Logout
+                </button>
+               
+              )}
+        </div>
+
+    </nav>
+  )
+}
+
+
+export default Navbar
+
+
+////////////////////////////////
+import React from "react"
+import Navbar from "./components/Navbar";
+
+
+const App :React.FC = ()=> {
+
+  const links = [
+    { label: 'Home', href: '/' },
+    {label:'Our-Team',href:'/team'},
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
+  ];
+
+  const handleLogout = () => {
+    console.log('User logged out');
+  };
+
+
+  return (
+   <div>
+     <Navbar
+        title="EDEM-TECH ENT"
+        links={links}
+        isLoggedIn={true}
+        onLogout={handleLogout}
+      />
+   </div>
+  )
+}
+
+export default App
