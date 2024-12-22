@@ -48,17 +48,17 @@ const Contact: React.FC = () => {
               <FaEnvelope className="inline-block mr-1" />
               <a
                 href="mailto:edemtechent@gmail.com"
-                className="hover:underline"
+                className="hover:underline font-bold font-serif"
               >
                 edemtechent@gmail.com
               </a>
             </div>
             <div className="mb-4">
-              <FaPhone className="inline-block mr-2" />
+              <FaPhone className="inline-block mr-2 font-bold font-serif" />
               <span>+233 247836603</span>
             </div>
             <div className="mb-4">
-              <FaMobile className="inline-block mr-2" />
+              <FaMobile className="inline-block mr-2 font-bold font-serif" />
               <span>+233 203760941</span>
             </div>
             <div className="mb-4">
@@ -67,26 +67,26 @@ const Contact: React.FC = () => {
                 href="https://wa.me/message/EXF33XUPKEM3E1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline font-bold font-serif"
               >
                 WhatsApp Us
               </a>
             </div>
             <div className="mb-4">
-              <FaMapMarkedAlt className="inline-block mr-2" />
+              <FaMapMarkedAlt className="inline-block mr-2 font-bold font-serif" />
               <span>F224 Barbet ST, GD-269-4680, Amrahia, Accra Ghana</span>
             </div>
           </div>
           <div className="flex-1 w-full">
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
-                <label htmlFor="name" className="block mb-2">
+                <label htmlFor="name" className="block mb-2 font-bold font-serif">
                   Your Name
                 </label>
                 <input
                   type="text"
                   name="name"
-                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white w-full font-bold font-serif p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter Your Name"
@@ -94,13 +94,13 @@ const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block mb-2">
+                <label htmlFor="email" className="block mb-2 font-bold font-serif">
                   Your Email
                 </label>
                 <input
                   type="email"
                   name="email"
-                  className="w-full p-2 rounded text-white bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="w-full p-2 rounded font-bold font-serif text-white bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter Your Email"
@@ -108,13 +108,13 @@ const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="contact" className="block mb-2">
+                <label htmlFor="contact" className="block mb-2 font-bold font-serif">
                   Your Contact
                 </label>
                 <input
                   type="tel"
                   name="contact"
-                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white font-bold font-serif w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.contact}
                   onChange={handleChange}
                   placeholder="Enter Your Contact Number"
@@ -122,13 +122,13 @@ const Contact: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block mb-2">
+                <label htmlFor="message" className="block mb-2 font-bold font-serif">
                   Your Message
                 </label>
                 <textarea
                   rows={5}
                   name="message"
-                  className="text-white w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
+                  className="text-white font-bold font-serif w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Enter Your Message"
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="bg-gradient-to-r from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full disabled:opacity-50"
+                className="bg-gradient-to-r font-bold font-serif from-green-400 to-blue-500 text-white transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full disabled:opacity-50"
               >
                 Send Message
               </button>
