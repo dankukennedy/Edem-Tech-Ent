@@ -4,7 +4,7 @@ import Edem from '../assets/Team/pro.jpeg'
 import Skepta from '../assets/Team/skepta.jpg'
 import Eric from '../assets/Team/eric.jpg'
 import Derrick from '../assets/Team/derrick.jpg'
-import User from '../assets/Team/user.png'
+import User from '../assets/Team/user.jpg'
 import Riches from '../assets/Team/riches.jpg'
 import Bismark from '../assets/Team/pro.jpeg'
 
@@ -61,7 +61,7 @@ const members: Member[] = [
     id: 5,
     name: "Bismark Labi",
     technologies: "Marketing manager",
-    image: Edem,
+    image: User,
     //github: "#",
     linkedIn: "#",
     field: "Project Manager",

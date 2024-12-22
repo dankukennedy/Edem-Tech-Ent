@@ -1,37 +1,37 @@
 import React from 'react'
 import { FaEnvelope, FaMapMarkedAlt, FaMobile, FaPhone, FaWhatsapp } from 'react-icons/fa';
 
-interface Contacts{
- id:number;
- name:string;
- email:string;
- contact:string;
- subject?:string;
-}
+// interface Contacts{
+//  id:number;
+//  name:string;
+//  email:string;
+//  contact:string;
+//  subject?:string;
+// }
 
-const contacts : Contacts[] = [
-      {
-      id:1,
-      name:"kennedy",
-      email:"dnkukennedy@gmail.com",
-      contact:"0247836603",
-      subject:"i wan a website"
-    },
-      {
-      id:2,
-      name:"kennedy",
-      email:"dnkukennedy@gmail.com",
-      contact:"0247836603",
-      subject:"i wan a website"
-    },
-      {
-      id:3,
-      name:"kennedy",
-      email:"dnkukennedy@gmail.com",
-      contact:"0247836603",
-      subject:"i wan a website"
-    }
-  ];
+// const contacts : Contacts[] = [
+//       {
+//       id:1,
+//       name:"kennedy",
+//       email:"dnkukennedy@gmail.com",
+//       contact:"0247836603",
+//       subject:"i wan a website"
+//     },
+//       {
+//       id:2,
+//       name:"kennedy",
+//       email:"dnkukennedy@gmail.com",
+//       contact:"0247836603",
+//       subject:"i wan a website"
+//     },
+//       {
+//       id:3,
+//       name:"kennedy",
+//       email:"dnkukennedy@gmail.com",
+//       contact:"0247836603",
+//       subject:"i wan a website"
+//     }
+//   ];
 
 const Contact: React.FC= () => {
   return (
