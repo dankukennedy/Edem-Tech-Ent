@@ -11,6 +11,9 @@ This website showcases our services, team, and portfolio. It serves as a central
 - Portfolio of completed projects  
 - Contact form for inquiries  
 
+## Live Demo
+[Live Link](https://edem-tech-ent.vercel.app/)
+
 ## Authors
 - Skepta – Frontend Developer ([GitHub Profile](https://github.com/1skepta))  
 - Kennedy – Backend Developer ([GitHub Profile](https://github.com/dankukennedy))  
