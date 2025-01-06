@@ -58,7 +58,7 @@ const projects : Projects[] = [
     // },
 ]
 
-const Project :React.FC= () => {
+const Project :React.FC = () => {
   return (
     <div className='bg-gradient-to-r from-black to-blue-950 text-white py-20 ' id='project'>
     <div className='container mx-auto px-8 md:px-16 lg:px:24'>
