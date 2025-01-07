@@ -3,7 +3,7 @@ import Logo from  '../assets/logo.jpeg'
 
 
 const Navbar:React.FC = () => {
-const [isOpen,setIsOpen]=useState(false);
+const [isOpen,setIsOpen] = useState(false);
 
   const toggleMenu=()=>{
     setIsOpen(!isOpen);
@@ -13,8 +13,8 @@ const [isOpen,setIsOpen]=useState(false);
     <nav className='bg-gradient-to-r from-black to-blue-950 text-white px-8 sm:px-8 md:px-16 lg:px-24'>
         <div className='container py-2 flex justify-between items-center'>
             <a href="#Home" className='flex items-center'>
-                <img src={Logo} alt="" className='w-15 h-10 rounded' />
-                <span className='p-1 text-2xl font-bold hover:bg-gradient-to-tr from-blue-200 to-slate-600 rounded'>EDEM-TECH ENT</span>
+                <img src={Logo} alt="logo" className='w-15 h-10 rounded' />
+                <span className='p-1 text-2xl font-bold hover:bg-gradient-to-tr from-blue-200 to-slate-600 rounded p-1'>EDEM-TECH ENT</span>
             </a>
             {/* Hamburger Icon */}
             <button
