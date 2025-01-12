@@ -17,6 +17,8 @@ interface Member {
   github?: string;
   linkedIn: string;
   field: string;
+  gravatar?:string;
+  portfolio?:string;
 }
 
 const members: Member[] = [
@@ -28,6 +30,8 @@ const members: Member[] = [
     github: "https://github.com/dankukennedy",
     linkedIn: "https://www.linkedin.com/in/kennedy-edem-danku-839108137/",
     field: "Full-Stack Developer",
+    gravatar:"https://gravatar.com/happilywise8526b101c9",
+    portfolio:"https://dankukennedy.github.io/portfolio/",
   },
   {
     id: 2,
@@ -102,7 +106,7 @@ const Team: React.FC = () => {
               <h3 className="text-2xl font-bold mb-2 text-white text-center font-serif">{member.name}</h3>
               <h4 className="text-xl font-semibold mb-2 text-white text-center font-serif">{member.field}</h4>
               <p className="text-gray-400 mb-4 text-center font-serif">{member.technologies}</p>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-2 flex-wrap  gap-2">
                 {member.github && (
                   <a
                     href={member.github}
@@ -121,6 +125,26 @@ const Team: React.FC = () => {
                     rel="noopener noreferrer"
                   >
                     LinkedIn
+                  </a>
+                )}
+                {member.portfolio && (
+                  <a
+                    href={member.portfolio}
+                    className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full font-serif"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                     Portfolio
+                  </a>
+                )}
+                {member.gravatar && (
+                  <a
+                    href={member.gravatar}
+                    className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full font-serif"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Gravatar
                   </a>
                 )}
               </div>
