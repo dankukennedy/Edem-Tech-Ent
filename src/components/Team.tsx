@@ -13,7 +13,7 @@ interface Member {
   id: number;
   name: string;
   technologies: string;
-  image?: string; 
+  image?: string;
   github?: string;
   linkedIn: string;
   field: string;

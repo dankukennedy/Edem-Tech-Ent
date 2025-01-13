@@ -89,15 +89,15 @@ const OverView: React.FC = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-red-400 to-red-800 text-white text-center py-16" id="about">
-      <h1 className="text-3xl font-bold">
+    <div className="bg-gradient-to-r from-red-400 to-red-600 text-white text-center py-16" id="about">
+      <h1 className="text-5xl font-bold">
         We are a{" "}
         <span className="text-transparent bg-clip-text bg-black font-serif">
           team of passionate software
         </span>{" "}
         developers at{" "}
         <span className="font-bold text-transparent bg-clip-text bg-black">
-          Edem-Tech Enterprise with
+          Edem-Tech Enterprise
         </span>
       </h1>
       <div className="py-2 my-2 justify-between mt-8">
@@ -105,12 +105,12 @@ const OverView: React.FC = () => {
           Over 2 Years Experience in software development
         </h1>
         <div className="mt-6 font-serif">
-          <p>
+          <p className="text-xl">
             Edem-Tech Ent for the past 2 years has been developing responsive websites, web applications, and systems
             for its clients. Do not hesitate to contact Edem-Tech Enterprise for any IT services.
           </p>
-          <p>Edem-Tech is ever ready to contact you for any development.</p>
-          <p>We specialize in web application development with good responsive features.</p>
+          <p className="text-xl">Edem-Tech is ever ready to contact you for any development.</p>
+          <p className="text-xl">We specialize in web application development with good responsive features.</p>
         </div>
         <div className="mt-8 space-x-4">
           <a href="#" target="_blank" rel="noopener noreferrer">

@@ -40,12 +40,12 @@ const Contact: React.FC = () => {
             <h3 className="text-3xl font-bold font-serif text-transparent bg-clip-text bg-gradient-to-r from-black to-blue-500">
               Let's Talk
             </h3>
-            <p className="text-white m-1 font-bold font-serif">
+            <p className=" m-1 font-bold font-serif text-xl">
               We are open to discussing web development projects or partnership
               opportunities
             </p>
-            <div className="mb-4 mt-8">
-              <FaEnvelope className="inline-block mr-1" />
+            <div className="mb-4 mt-8 text-xl">
+              <FaEnvelope size={32} className="inline-block mr-1" />
               <a
                 href="mailto:edemtechent@gmail.com"
                 className="hover:underline font-bold font-serif"
@@ -53,16 +53,16 @@ const Contact: React.FC = () => {
                 edemtechent@gmail.com
               </a>
             </div>
-            <div className="mb-4">
-              <FaPhone className="inline-block mr-2 font-bold font-serif" />
+            <div className="mb-4 text-xl">
+              <FaPhone size={32} className="inline-block mr-2 font-bold font-serif" />
               <span>+233 247836603</span>
             </div>
-            <div className="mb-4">
-              <FaMobile className="inline-block mr-2 font-bold font-serif" />
+            <div className="mb-4  text-xl">
+              <FaMobile size={32} className="inline-block mr-2 font-bold font-serif" />
               <span>+233 203760941</span>
             </div>
-            <div className="mb-4">
-              <FaWhatsapp className="inline-block mr-2" />
+            <div className="mb-4  text-xl">
+              <FaWhatsapp size={32} className="inline-block mr-2" />
               <a
                 href="https://wa.me/message/EXF33XUPKEM3E1"
                 target="_blank"
@@ -72,12 +72,12 @@ const Contact: React.FC = () => {
                 WhatsApp Us
               </a>
             </div>
-            <div className="mb-4">
-              <FaMapMarkedAlt className="inline-block mr-2 font-bold font-serif" />
+            <div className="mb-4  text-xl">
+              <FaMapMarkedAlt size={32} className="inline-block mr-2 font-bold font-serif" />
               <span>F224 Barbet ST, GD-269-4680, Amrahia, Accra Ghana</span>
             </div>
           </div>
-          <div className="flex-1 w-full">
+          <div className="flex-1 w-full  text-xl">
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block mb-2 font-bold font-serif">
