@@ -132,9 +132,9 @@ const OverView: React.FC = () => {
 
           {isOpen && (
             <div className="fixed inset-0  bg-opacity-50 flex items-center justify-center z-50">
-              <div className="bg-red bg-opacity-90 p-6  bg-blue-950 rounded shadow-lg w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3">
+              <div className="bg-red bg-opacity-80 p-6  bg-black rounded shadow-lg w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3">
                 <button className="text-white float-right font-bold" onClick={togglePopup}>
-                  <span className="p-2 bg-red-600 rounded-full text-xl font-bold">X</span>
+                  <span className="p-2 bg-red-600 rounded-md text-xl px-3 font-bold">X</span>
                 </button>
                 <h2 className="text-2xl font-bold mb-4 text-center text-white">Fill Your Requirement Form</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
